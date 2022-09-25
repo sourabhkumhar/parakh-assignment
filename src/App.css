@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+.container {
+  padding-inline: 5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.products {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+
+.button {
+  margin-top: 40px;
+}
+.details {
+  margin-top: 20px;
+}
+
+.btn {
+  width: 100%;
+  border: none;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0);
+  padding: 10px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.btn:active {  
+  box-shadow: 2px 2px 0px rgb(0, 0, 0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add {
+  background-color: rgb(20, 107, 158);
+}
+.remove {
+  background-color: rgb(107, 129, 141);
+}
+
+.qty {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+
+.qtyBtn {
+  width: 25%;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.addQty {
+  background-color: rgb(62, 124, 103);
+}
+.removeQty {
+  background-color: rgb(111, 124, 138);
+}
+
+.qtyShow {
+  width: 50%;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.box {
+  margin: 10px;
+  padding: 15px;
+  width: 150px;
+  border: 2px solid black;
+}
+
+.box-item {
+  display: block;
+  margin-top: 5px;
 }
