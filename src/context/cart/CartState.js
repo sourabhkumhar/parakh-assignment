@@ -22,7 +22,7 @@ const CartState = (props) => {
         setCart(cart)
         console.log("Product Added to the cart.")
         setTimeout(() => {
-            console.log(cart)
+            console.log("Current Cart: ", cart)
         }, 100);
     }
     
@@ -35,7 +35,7 @@ const CartState = (props) => {
         cart.splice(i, 1)
         setCart(cart);
         console.log("Product removed from the cart.")
-        console.log(cart)
+        console.log("Current Cart: ", cart)
     }
 
 
