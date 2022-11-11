@@ -9,10 +9,12 @@ function App() {
         "name": "Cosmetics",
         "productList": [
           {
+            "id": 1,
             "name": "Hair Oil",
             "price": "120.00"
           },
           {
+            "id": 2,
             "name": "Face wash",
             "price": "90.00"
           }
@@ -22,10 +24,12 @@ function App() {
         "name": "Household",
         "productList": [
           {
+            "id": 3,
             "name": "Brushes",
             "price": "30.00"
           },
           {
+            "id": 4,
             "name": "Combs",
             "price": "89.00"
           },

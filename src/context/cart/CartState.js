@@ -38,9 +38,18 @@ const CartState = (props) => {
         console.log("Current Cart: ", cart)
     }
 
+    const totalPrice = () => {
+        let total = 0;
+        for (var i = 0; i < cart.length; i++) {
+            total += Number(cart[i].price) * Number(cart[i].qty);
+        }
+
+        return total;
+    }
+
 
     return (
-        <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
+        <CartContext.Provider value={{ cart, addToCart, removeFromCart, totalPrice }}>
             {props.children}
         </CartContext.Provider>
     )
